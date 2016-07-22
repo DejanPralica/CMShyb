@@ -15,7 +15,18 @@ p{
 	object-fit: contain;
 }
 
+div.bla
+{ 
+	text-align:center; 
+border:1px solid white; 
+height: 40px; 
+display: flex;
+align-items: center;
+justify-content: center;
+background: #FF4500
+ }
 </style>
+
 
 <?php
 
@@ -24,6 +35,16 @@ $stmt->execute();
 
 ?>
     <div class="container">
+	<div class="row">
+			<?php $stmt1=$dbObject->prepare('SELECT * FROM categories');
+					$stmt1->execute();
+						while($row1 = $stmt1->fetch(PDO::FETCH_ASSOC)) :?>
+						<div class="col-lg-1 blah" >
+							<a  style="color: white" href="post.php?id=<?=$row1['category_id']?>"><?=$row1['category_name']?></a>
+						</div>
+						<?php endwhile;?>
+		</div>
+	
       <!-- Example row of columns -->
       <div class="row">
 	  <?php while($row = $stmt->fetch(PDO::FETCH_ASSOC)) : ?>
