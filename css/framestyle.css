@@ -1,0 +1,25 @@
+.weather p {
+	font-size: 20px;
+	color: #555;
+}
+
+.weather p i.wi {
+	font-size: 24px;
+	font-weight: 500;
+	color: #924DA3;
+}
+.frame {
+  height: 100%; 
+  width: 100%; 
+  display: inline-block;
+  position: center;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+
+
