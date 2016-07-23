@@ -141,6 +141,6 @@ $category_array=array();
     }
 	 src="js/custom-file-input.js";
 	 </script>
- <?phpvar_dump($post_image); require_once("includes/footer.php"); ?>
+ <?php require_once("includes/footer.php"); ?>
 
 
